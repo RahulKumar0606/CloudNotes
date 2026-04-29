@@ -1,0 +1,32 @@
+1. Introduction to Ansible
+What is Ansible?
+Ansible is a radically simple, open-source IT automation tool (agentless configuration management, application deployment, and orchestration). It uses SSH (no agents required on remote hosts) and describes automation in plain English-like YAML.
+Key Benefits:
+
+Free & open-source
+Easy to learn (no heavy coding)
+Idempotent (safe to run multiple times — only makes changes if needed)
+Modular and reusable
+Works for cloud, networks, servers, security, etc.
+
+Use Cases:
+
+Provisioning servers
+Deploying web servers (e.g., Nginx/Apache)
+Configuration management
+Application deployment
+Orchestration
+Cloud automation
+
+Architecture (High-level):
+
+Control Node (where Ansible is installed — usually Linux)
+Managed Nodes (remote hosts — no Ansible installed)
+Communication via SSH + Python (modules executed remotely)
+Inventory defines targets
+Playbooks define what to do
+
+Installation (on Control Node - Ubuntu/Debian example):
+Bashsudo apt update
+sudo apt install ansible -y
+ansible --version
